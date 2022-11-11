@@ -1,0 +1,649 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 12.00.40629.0 (f745dd53).
+//
+// x:\endox_2012\endox\amrfidmgrex.tlh
+//
+// C++ source equivalent of Win32 type library .\AmRfidMgrEx\AmRfidMgrEx.tlb
+// compiler-generated file created 09/02/16 at 16:09:52 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("0826665f-b807-432e-bf23-6b9b3b3a4c44"))
+/* LIBID */ __amrfidmgrex;
+struct /* coclass */ DBUtilities;
+enum CleantrackTables;
+struct /* coclass */ DBObject;
+struct /* coclass */ Step;
+struct /* coclass */ BadgeDetectedHandler;
+struct /* coclass */ UserDetectedHandler;
+struct /* coclass */ DeviceDetectedHandler;
+struct /* coclass */ Device;
+struct /* coclass */ Operator;
+struct /* coclass */ RFIDHelper;
+struct /* coclass */ AnticollisionLoopDataDelegate;
+struct /* coclass */ ConnectionLossHandler;
+enum LedType;
+struct __declspec(uuid("01fbb496-a99d-3964-9062-1d9b494e5afc"))
+/* interface */ IRFIDManager;
+struct __declspec(uuid("bcf158d5-aecd-30d4-ac52-1ab38a4b03a5"))
+/* interface */ IRFIDCiclo;
+struct __declspec(uuid("542ee18d-4180-3e40-b33f-4028c415ce92"))
+/* interface */ IRFIDEvents;
+struct /* coclass */ RFIDCiclo;
+struct /* coclass */ RFIDManager;
+struct /* coclass */ StepManager;
+struct /* coclass */ DataCollectionCompleteHandler;
+struct /* coclass */ Types;
+enum Result;
+struct /* coclass */ Info;
+struct /* coclass */ CompleteDelegate;
+struct /* coclass */ UserDetectedHandler_2;
+struct /* coclass */ DeviceDetectedHandler_2;
+struct /* coclass */ BadgeDetectedHandler_2;
+struct __declspec(uuid("d28b733f-2d68-3f54-904a-ced0f08b9da3"))
+/* dual interface */ _DBUtilities;
+struct __declspec(uuid("b790dda8-7c05-34f6-bf8f-1b51c37f474b"))
+/* dual interface */ _DBObject;
+struct __declspec(uuid("32249624-7640-39b2-afad-7847e7d82621"))
+/* dual interface */ _Step;
+struct __declspec(uuid("f4fbc21e-5996-35ee-920b-f53a3a4c2789"))
+/* dual interface */ _BadgeDetectedHandler;
+struct __declspec(uuid("5761b868-3ab0-3b1a-8d56-697135c78001"))
+/* dual interface */ _UserDetectedHandler;
+struct __declspec(uuid("5ad3f67d-e0f8-33a7-a899-d6465a7dfd15"))
+/* dual interface */ _DeviceDetectedHandler;
+struct __declspec(uuid("a4672566-f9c7-3bdc-aa5a-3e4442d79783"))
+/* dual interface */ _Device;
+struct __declspec(uuid("bc310f57-81c3-38fd-8646-f38220c50d3f"))
+/* dual interface */ _Operator;
+struct __declspec(uuid("0d5b2674-61e5-36cf-a228-3a8a5eeb3151"))
+/* dual interface */ _RFIDHelper;
+struct __declspec(uuid("5637f929-46b2-30e3-84d5-e617983f4e13"))
+/* dual interface */ _AnticollisionLoopDataDelegate;
+struct __declspec(uuid("59cdd059-d47b-37c0-bdbb-4cad7129617b"))
+/* dual interface */ _ConnectionLossHandler;
+struct __declspec(uuid("adaceed5-ae2f-3396-972d-ecefcc7354df"))
+/* dual interface */ _StepManager;
+struct __declspec(uuid("2c7472d2-5378-37de-8c29-faee358102b7"))
+/* dual interface */ _UserDetectedHandler_2;
+struct __declspec(uuid("41f0015b-9c3b-364a-8f46-357411c12f93"))
+/* dual interface */ _DeviceDetectedHandler_2;
+struct __declspec(uuid("42d8fac4-07c0-3d24-a6fc-72a4b325e943"))
+/* dual interface */ _BadgeDetectedHandler_2;
+struct __declspec(uuid("858d22d7-2c18-32db-b5c2-5f31ba14d3b7"))
+/* dual interface */ _DataCollectionCompleteHandler;
+struct __declspec(uuid("0d56b81d-ca56-3db1-94f4-c79fb72b0395"))
+/* dual interface */ _Types;
+struct __declspec(uuid("8da2671c-56be-3b32-9ace-280de5fb28e2"))
+/* dual interface */ _Info;
+struct __declspec(uuid("314a5040-cd18-3c1c-9a49-9127b001d560"))
+/* dual interface */ _CompleteDelegate;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IRFIDCiclo, __uuidof(IRFIDCiclo));
+_COM_SMARTPTR_TYPEDEF(IRFIDEvents, __uuidof(IRFIDEvents));
+_COM_SMARTPTR_TYPEDEF(IRFIDManager, __uuidof(IRFIDManager));
+_COM_SMARTPTR_TYPEDEF(_DBUtilities, __uuidof(_DBUtilities));
+_COM_SMARTPTR_TYPEDEF(_DBObject, __uuidof(_DBObject));
+_COM_SMARTPTR_TYPEDEF(_Step, __uuidof(_Step));
+_COM_SMARTPTR_TYPEDEF(_BadgeDetectedHandler, __uuidof(_BadgeDetectedHandler));
+_COM_SMARTPTR_TYPEDEF(_UserDetectedHandler, __uuidof(_UserDetectedHandler));
+_COM_SMARTPTR_TYPEDEF(_DeviceDetectedHandler, __uuidof(_DeviceDetectedHandler));
+_COM_SMARTPTR_TYPEDEF(_Device, __uuidof(_Device));
+_COM_SMARTPTR_TYPEDEF(_Operator, __uuidof(_Operator));
+_COM_SMARTPTR_TYPEDEF(_RFIDHelper, __uuidof(_RFIDHelper));
+_COM_SMARTPTR_TYPEDEF(_AnticollisionLoopDataDelegate, __uuidof(_AnticollisionLoopDataDelegate));
+_COM_SMARTPTR_TYPEDEF(_ConnectionLossHandler, __uuidof(_ConnectionLossHandler));
+_COM_SMARTPTR_TYPEDEF(_StepManager, __uuidof(_StepManager));
+_COM_SMARTPTR_TYPEDEF(_UserDetectedHandler_2, __uuidof(_UserDetectedHandler_2));
+_COM_SMARTPTR_TYPEDEF(_DeviceDetectedHandler_2, __uuidof(_DeviceDetectedHandler_2));
+_COM_SMARTPTR_TYPEDEF(_BadgeDetectedHandler_2, __uuidof(_BadgeDetectedHandler_2));
+_COM_SMARTPTR_TYPEDEF(_DataCollectionCompleteHandler, __uuidof(_DataCollectionCompleteHandler));
+_COM_SMARTPTR_TYPEDEF(_Types, __uuidof(_Types));
+_COM_SMARTPTR_TYPEDEF(_Info, __uuidof(_Info));
+_COM_SMARTPTR_TYPEDEF(_CompleteDelegate, __uuidof(_CompleteDelegate));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("880e191b-034f-3181-bfb7-9da34cf652ab"))
+DBUtilities;
+    // [ default ] interface _DBUtilities
+    // interface _Object
+
+enum __declspec(uuid("3a523a6b-d953-335b-9881-f26837a77b98"))
+CleantrackTables
+{
+    CleantrackTables_Causali = 0,
+    CleantrackTables_Cicli = 1,
+    CleantrackTables_Cicli_Plus = 2,
+    CleantrackTables_Configurazione = 3,
+    CleantrackTables_DismissionHistory = 4,
+    CleantrackTables_Dispositivi = 5,
+    CleantrackTables_Fornitori = 6,
+    CleantrackTables_Gruppi = 7,
+    CleantrackTables_Lettori_badge = 8,
+    CleantrackTables_Log = 9,
+    CleantrackTables_Log_badge = 10,
+    CleantrackTables_Logext = 11,
+    CleantrackTables_Mail = 12,
+    CleantrackTables_Operatori = 13,
+    CleantrackTables_RelStatiDispositivi = 14,
+    CleantrackTables_Setup = 15,
+    CleantrackTables_Stato_Dispositivo = 16,
+    CleantrackTables_Sterilizzatrici = 17,
+    CleantrackTables_TipiDispositivi = 18,
+    CleantrackTables_Utenti = 19,
+    CleantrackTables_Utenti_Log = 20,
+    CleantrackTables_Utenti_Setting = 21
+};
+
+struct __declspec(uuid("4268d7bf-277e-3fe6-9d58-46f40c7d5992"))
+DBObject;
+    // [ default ] interface _DBObject
+    // interface _Object
+
+struct __declspec(uuid("600c601e-3f1b-31d4-b00e-7b47e45bdab2"))
+Step;
+    // [ default ] interface _Step
+    // interface _Object
+
+struct __declspec(uuid("484d28ed-7d68-33f5-b8de-b5cc63f0c0a6"))
+BadgeDetectedHandler;
+    // [ default ] interface _BadgeDetectedHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("6e4cbf99-914a-3604-97e1-1113c3d27e81"))
+UserDetectedHandler;
+    // [ default ] interface _UserDetectedHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("77dcacae-bafc-30c9-bd96-aac1eda939e8"))
+DeviceDetectedHandler;
+    // [ default ] interface _DeviceDetectedHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("a0def633-9b3e-35ec-802a-9f31516ada44"))
+Device;
+    // [ default ] interface _Device
+    // interface _Object
+
+struct __declspec(uuid("5dc3ef07-9c61-3311-8fc1-6a7903704bab"))
+Operator;
+    // [ default ] interface _Operator
+    // interface _Object
+
+struct __declspec(uuid("6db0fe7b-b127-344f-a7d3-ae3b01815cdd"))
+RFIDHelper;
+    // [ default ] interface _RFIDHelper
+    // interface _Object
+
+struct __declspec(uuid("d1721847-4f83-3608-919e-d373974a224e"))
+AnticollisionLoopDataDelegate;
+    // [ default ] interface _AnticollisionLoopDataDelegate
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("c8337316-0bce-397f-96bd-7103e387185a"))
+ConnectionLossHandler;
+    // [ default ] interface _ConnectionLossHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+enum __declspec(uuid("347fdfc5-335b-3dc1-8883-818c0b90ac3a"))
+LedType
+{
+    LedType_Unknown = 0,
+    LedType_Orange = 1,
+    LedType_Red = 2,
+    LedType_Green = 3,
+    LedType_Blue = 4
+};
+
+struct __declspec(uuid("bcf158d5-aecd-30d4-ac52-1ab38a4b03a5"))
+IRFIDCiclo : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_ExamDate (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_ExamDate (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_SterilizationStartDate (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_SterilizationStartDate (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_SterilizationEndDate (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_SterilizationEndDate (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_ExamOperatorName (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_ExamOperatorName (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_ExamOperatorSurname (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_ExamOperatorSurname (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_SterilizationStartOperatorName (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_SterilizationStartOperatorName (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_SterilizationStartOperatorSurname (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_SterilizationStartOperatorSurname (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_SterilizationEndOperatorName (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_SterilizationEndOperatorName (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_SterilizationEndOperatorSurname (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_SterilizationEndOperatorSurname (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_DeviceIdNumber (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_DeviceIdNumber (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_DeviceDescription (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_DeviceDescription (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_SterilizerDescription (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_SterilizerDescription (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_CustomTrackingDate1 (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_CustomTrackingDate1 (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_CustomTrackingOperatorName1 (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_CustomTrackingOperatorName1 (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_CustomTrackingOperatorSurname1 (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_CustomTrackingOperatorSurname1 (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_CustomTrackingDate2 (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_CustomTrackingDate2 (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_CustomTrackingOperatorName2 (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_CustomTrackingOperatorName2 (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_IdVasca (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_IdVasca (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_MachineCycleId (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_MachineCycleId (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_DisinfectantCycleId (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_DisinfectantCycleId (
+        /*[in]*/ BSTR pRetVal ) = 0;
+      virtual HRESULT __stdcall get_AdditionalInfo (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall put_AdditionalInfo (
+        /*[in]*/ BSTR pRetVal ) = 0;
+};
+
+struct __declspec(uuid("542ee18d-4180-3e40-b33f-4028c415ce92"))
+IRFIDEvents : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall DeviceDetected (
+        /*[in]*/ BSTR desc,
+        /*[in]*/ __int64 id ) = 0;
+      virtual HRESULT __stdcall UserDetected (
+        /*[in]*/ BSTR nome,
+        /*[in]*/ BSTR cognome,
+        /*[in]*/ __int64 id ) = 0;
+      virtual HRESULT __stdcall BadgeDetected (
+        /*[in]*/ BSTR id ) = 0;
+      virtual HRESULT __stdcall Completed (
+        /*[in]*/ __int64 success ) = 0;
+};
+
+struct __declspec(uuid("01fbb496-a99d-3964-9062-1d9b494e5afc"))
+IRFIDManager : IUnknown
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall startListening (
+        /*[in]*/ BSTR address,
+        /*[in]*/ long fromState,
+        /*[in]*/ long examId ) = 0;
+      virtual HRESULT __stdcall addUserListener (
+        /*[in]*/ struct IRFIDEvents * evt ) = 0;
+      virtual HRESULT __stdcall addDeviceListener (
+        /*[in]*/ struct IRFIDEvents * evt ) = 0;
+      virtual HRESULT __stdcall addCompletedListener (
+        /*[in]*/ struct IRFIDEvents * evt ) = 0;
+      virtual HRESULT __stdcall cleanUpListeners ( ) = 0;
+      virtual HRESULT __stdcall setConnectionString (
+        /*[in]*/ BSTR connectionString ) = 0;
+      virtual HRESULT __stdcall stopListening ( ) = 0;
+      virtual HRESULT __stdcall checkAndInsertManualCycle (
+        /*[in]*/ long stateToMatch,
+        /*[in]*/ long op,
+        /*[in]*/ long Device,
+        /*[in]*/ long examId,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall checkUserValidity (
+        /*[in]*/ BSTR op,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall getUserIdFromMat (
+        /*[in]*/ BSTR mat,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall getDeviceIdFromMat (
+        /*[in]*/ BSTR mat,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall testDatabaseConnection (
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall testRFIDAddress (
+        /*[in]*/ BSTR address,
+        /*[out,retval]*/ __int64 * pRetVal ) = 0;
+      virtual HRESULT __stdcall getDeviceDesc (
+        /*[in]*/ long id,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall getUserName (
+        /*[in]*/ long id,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall getUserSurname (
+        /*[in]*/ long id,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall getSeparator (
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall getCycleAdditionalInfo (
+        /*[in]*/ long examId,
+        /*[in]*/ __int64 previous,
+        /*[out,retval]*/ BSTR * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetCycleData (
+        /*[in]*/ long iIDEsame,
+        /*[in]*/ long iPrevious,
+        /*[out,retval]*/ struct IRFIDCiclo * * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetCycleDataFromEsameDispositivo (
+        /*[in]*/ long iIDEsame,
+        /*[in]*/ long iIDDispositivo,
+        /*[in]*/ long iPrevious,
+        /*[out,retval]*/ struct IRFIDCiclo * * pRetVal ) = 0;
+};
+
+struct __declspec(uuid("bbc630a5-f30f-3772-995f-1425e6a727a1"))
+RFIDCiclo;
+    // interface _Object
+    // [ default ] interface IRFIDCiclo
+
+struct __declspec(uuid("621f8e10-c090-3df0-97b1-ba0c34d9ee84"))
+RFIDManager;
+    // interface _Object
+    // [ default ] interface IRFIDManager
+
+struct __declspec(uuid("54a11884-9f3b-37b9-bc8f-f6c4887d394a"))
+StepManager;
+    // [ default ] interface _StepManager
+    // interface _Object
+
+struct __declspec(uuid("bca381ee-3952-33d5-807f-25f74795b97d"))
+DataCollectionCompleteHandler;
+    // [ default ] interface _DataCollectionCompleteHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("0220cc6f-1ec9-30b5-a0d7-e223de9ce1a8"))
+Types;
+    // [ default ] interface _Types
+    // interface _Object
+
+enum __declspec(uuid("cd354ce6-559a-39b4-af62-441537780bff"))
+Result
+{
+    Result_Unknown = 0,
+    Result_Error = 1,
+    Result_Success = 2,
+    Result_Timeout = 3
+};
+
+struct __declspec(uuid("a01dc734-d9c6-300a-a71e-39d6873a86a7"))
+Info;
+    // [ default ] interface _Info
+    // interface _Object
+
+struct __declspec(uuid("378d60c8-26c2-34c3-8621-8047c1ef6042"))
+CompleteDelegate;
+    // [ default ] interface _CompleteDelegate
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("2a46e8e6-9818-356b-ba7c-380a28c95189"))
+UserDetectedHandler_2;
+    // [ default ] interface _UserDetectedHandler_2
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("7c8222cc-af9d-3b7f-aa31-ddcc0494ce79"))
+DeviceDetectedHandler_2;
+    // [ default ] interface _DeviceDetectedHandler_2
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("b1ba2f6e-daed-3278-9b84-5dd1191ab960"))
+BadgeDetectedHandler_2;
+    // [ default ] interface _BadgeDetectedHandler_2
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("d28b733f-2d68-3f54-904a-ced0f08b9da3"))
+_DBUtilities : IDispatch
+{};
+
+struct __declspec(uuid("b790dda8-7c05-34f6-bf8f-1b51c37f474b"))
+_DBObject : IDispatch
+{};
+
+struct __declspec(uuid("32249624-7640-39b2-afad-7847e7d82621"))
+_Step : IDispatch
+{};
+
+struct __declspec(uuid("f4fbc21e-5996-35ee-920b-f53a3a4c2789"))
+_BadgeDetectedHandler : IDispatch
+{};
+
+struct __declspec(uuid("5761b868-3ab0-3b1a-8d56-697135c78001"))
+_UserDetectedHandler : IDispatch
+{};
+
+struct __declspec(uuid("5ad3f67d-e0f8-33a7-a899-d6465a7dfd15"))
+_DeviceDetectedHandler : IDispatch
+{};
+
+struct __declspec(uuid("a4672566-f9c7-3bdc-aa5a-3e4442d79783"))
+_Device : IDispatch
+{};
+
+struct __declspec(uuid("bc310f57-81c3-38fd-8646-f38220c50d3f"))
+_Operator : IDispatch
+{};
+
+struct __declspec(uuid("0d5b2674-61e5-36cf-a228-3a8a5eeb3151"))
+_RFIDHelper : IDispatch
+{};
+
+struct __declspec(uuid("5637f929-46b2-30e3-84d5-e617983f4e13"))
+_AnticollisionLoopDataDelegate : IDispatch
+{};
+
+struct __declspec(uuid("59cdd059-d47b-37c0-bdbb-4cad7129617b"))
+_ConnectionLossHandler : IDispatch
+{};
+
+struct __declspec(uuid("adaceed5-ae2f-3396-972d-ecefcc7354df"))
+_StepManager : IDispatch
+{};
+
+struct __declspec(uuid("2c7472d2-5378-37de-8c29-faee358102b7"))
+_UserDetectedHandler_2 : IDispatch
+{};
+
+struct __declspec(uuid("41f0015b-9c3b-364a-8f46-357411c12f93"))
+_DeviceDetectedHandler_2 : IDispatch
+{};
+
+struct __declspec(uuid("42d8fac4-07c0-3d24-a6fc-72a4b325e943"))
+_BadgeDetectedHandler_2 : IDispatch
+{};
+
+struct __declspec(uuid("858d22d7-2c18-32db-b5c2-5f31ba14d3b7"))
+_DataCollectionCompleteHandler : IDispatch
+{};
+
+struct __declspec(uuid("0d56b81d-ca56-3db1-94f4-c79fb72b0395"))
+_Types : IDispatch
+{};
+
+struct __declspec(uuid("8da2671c-56be-3b32-9ace-280de5fb28e2"))
+_Info : IDispatch
+{};
+
+struct __declspec(uuid("314a5040-cd18-3c1c-9a49-9127b001d560"))
+_CompleteDelegate : IDispatch
+{};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_amrfidmgrex =
+    {0x0826665f,0xb807,0x432e,{0xbf,0x23,0x6b,0x9b,0x3b,0x3a,0x4c,0x44}};
+extern "C" const GUID __declspec(selectany) CLSID_DBUtilities =
+    {0x880e191b,0x034f,0x3181,{0xbf,0xb7,0x9d,0xa3,0x4c,0xf6,0x52,0xab}};
+extern "C" const GUID __declspec(selectany) CLSID_DBObject =
+    {0x4268d7bf,0x277e,0x3fe6,{0x9d,0x58,0x46,0xf4,0x0c,0x7d,0x59,0x92}};
+extern "C" const GUID __declspec(selectany) CLSID_Step =
+    {0x600c601e,0x3f1b,0x31d4,{0xb0,0x0e,0x7b,0x47,0xe4,0x5b,0xda,0xb2}};
+extern "C" const GUID __declspec(selectany) CLSID_BadgeDetectedHandler =
+    {0x484d28ed,0x7d68,0x33f5,{0xb8,0xde,0xb5,0xcc,0x63,0xf0,0xc0,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_UserDetectedHandler =
+    {0x6e4cbf99,0x914a,0x3604,{0x97,0xe1,0x11,0x13,0xc3,0xd2,0x7e,0x81}};
+extern "C" const GUID __declspec(selectany) CLSID_DeviceDetectedHandler =
+    {0x77dcacae,0xbafc,0x30c9,{0xbd,0x96,0xaa,0xc1,0xed,0xa9,0x39,0xe8}};
+extern "C" const GUID __declspec(selectany) CLSID_Device =
+    {0xa0def633,0x9b3e,0x35ec,{0x80,0x2a,0x9f,0x31,0x51,0x6a,0xda,0x44}};
+extern "C" const GUID __declspec(selectany) CLSID_Operator =
+    {0x5dc3ef07,0x9c61,0x3311,{0x8f,0xc1,0x6a,0x79,0x03,0x70,0x4b,0xab}};
+extern "C" const GUID __declspec(selectany) CLSID_RFIDHelper =
+    {0x6db0fe7b,0xb127,0x344f,{0xa7,0xd3,0xae,0x3b,0x01,0x81,0x5c,0xdd}};
+extern "C" const GUID __declspec(selectany) CLSID_AnticollisionLoopDataDelegate =
+    {0xd1721847,0x4f83,0x3608,{0x91,0x9e,0xd3,0x73,0x97,0x4a,0x22,0x4e}};
+extern "C" const GUID __declspec(selectany) CLSID_ConnectionLossHandler =
+    {0xc8337316,0x0bce,0x397f,{0x96,0xbd,0x71,0x03,0xe3,0x87,0x18,0x5a}};
+extern "C" const GUID __declspec(selectany) IID_IRFIDCiclo =
+    {0xbcf158d5,0xaecd,0x30d4,{0xac,0x52,0x1a,0xb3,0x8a,0x4b,0x03,0xa5}};
+extern "C" const GUID __declspec(selectany) IID_IRFIDEvents =
+    {0x542ee18d,0x4180,0x3e40,{0xb3,0x3f,0x40,0x28,0xc4,0x15,0xce,0x92}};
+extern "C" const GUID __declspec(selectany) IID_IRFIDManager =
+    {0x01fbb496,0xa99d,0x3964,{0x90,0x62,0x1d,0x9b,0x49,0x4e,0x5a,0xfc}};
+extern "C" const GUID __declspec(selectany) CLSID_RFIDCiclo =
+    {0xbbc630a5,0xf30f,0x3772,{0x99,0x5f,0x14,0x25,0xe6,0xa7,0x27,0xa1}};
+extern "C" const GUID __declspec(selectany) CLSID_RFIDManager =
+    {0x621f8e10,0xc090,0x3df0,{0x97,0xb1,0xba,0x0c,0x34,0xd9,0xee,0x84}};
+extern "C" const GUID __declspec(selectany) CLSID_StepManager =
+    {0x54a11884,0x9f3b,0x37b9,{0xbc,0x8f,0xf6,0xc4,0x88,0x7d,0x39,0x4a}};
+extern "C" const GUID __declspec(selectany) CLSID_DataCollectionCompleteHandler =
+    {0xbca381ee,0x3952,0x33d5,{0x80,0x7f,0x25,0xf7,0x47,0x95,0xb9,0x7d}};
+extern "C" const GUID __declspec(selectany) CLSID_Types =
+    {0x0220cc6f,0x1ec9,0x30b5,{0xa0,0xd7,0xe2,0x23,0xde,0x9c,0xe1,0xa8}};
+extern "C" const GUID __declspec(selectany) CLSID_Info =
+    {0xa01dc734,0xd9c6,0x300a,{0xa7,0x1e,0x39,0xd6,0x87,0x3a,0x86,0xa7}};
+extern "C" const GUID __declspec(selectany) CLSID_CompleteDelegate =
+    {0x378d60c8,0x26c2,0x34c3,{0x86,0x21,0x80,0x47,0xc1,0xef,0x60,0x42}};
+extern "C" const GUID __declspec(selectany) CLSID_UserDetectedHandler_2 =
+    {0x2a46e8e6,0x9818,0x356b,{0xba,0x7c,0x38,0x0a,0x28,0xc9,0x51,0x89}};
+extern "C" const GUID __declspec(selectany) CLSID_DeviceDetectedHandler_2 =
+    {0x7c8222cc,0xaf9d,0x3b7f,{0xaa,0x31,0xdd,0xcc,0x04,0x94,0xce,0x79}};
+extern "C" const GUID __declspec(selectany) CLSID_BadgeDetectedHandler_2 =
+    {0xb1ba2f6e,0xdaed,0x3278,{0x9b,0x84,0x5d,0xd1,0x19,0x1a,0xb9,0x60}};
+extern "C" const GUID __declspec(selectany) IID__DBUtilities =
+    {0xd28b733f,0x2d68,0x3f54,{0x90,0x4a,0xce,0xd0,0xf0,0x8b,0x9d,0xa3}};
+extern "C" const GUID __declspec(selectany) IID__DBObject =
+    {0xb790dda8,0x7c05,0x34f6,{0xbf,0x8f,0x1b,0x51,0xc3,0x7f,0x47,0x4b}};
+extern "C" const GUID __declspec(selectany) IID__Step =
+    {0x32249624,0x7640,0x39b2,{0xaf,0xad,0x78,0x47,0xe7,0xd8,0x26,0x21}};
+extern "C" const GUID __declspec(selectany) IID__BadgeDetectedHandler =
+    {0xf4fbc21e,0x5996,0x35ee,{0x92,0x0b,0xf5,0x3a,0x3a,0x4c,0x27,0x89}};
+extern "C" const GUID __declspec(selectany) IID__UserDetectedHandler =
+    {0x5761b868,0x3ab0,0x3b1a,{0x8d,0x56,0x69,0x71,0x35,0xc7,0x80,0x01}};
+extern "C" const GUID __declspec(selectany) IID__DeviceDetectedHandler =
+    {0x5ad3f67d,0xe0f8,0x33a7,{0xa8,0x99,0xd6,0x46,0x5a,0x7d,0xfd,0x15}};
+extern "C" const GUID __declspec(selectany) IID__Device =
+    {0xa4672566,0xf9c7,0x3bdc,{0xaa,0x5a,0x3e,0x44,0x42,0xd7,0x97,0x83}};
+extern "C" const GUID __declspec(selectany) IID__Operator =
+    {0xbc310f57,0x81c3,0x38fd,{0x86,0x46,0xf3,0x82,0x20,0xc5,0x0d,0x3f}};
+extern "C" const GUID __declspec(selectany) IID__RFIDHelper =
+    {0x0d5b2674,0x61e5,0x36cf,{0xa2,0x28,0x3a,0x8a,0x5e,0xeb,0x31,0x51}};
+extern "C" const GUID __declspec(selectany) IID__AnticollisionLoopDataDelegate =
+    {0x5637f929,0x46b2,0x30e3,{0x84,0xd5,0xe6,0x17,0x98,0x3f,0x4e,0x13}};
+extern "C" const GUID __declspec(selectany) IID__ConnectionLossHandler =
+    {0x59cdd059,0xd47b,0x37c0,{0xbd,0xbb,0x4c,0xad,0x71,0x29,0x61,0x7b}};
+extern "C" const GUID __declspec(selectany) IID__StepManager =
+    {0xadaceed5,0xae2f,0x3396,{0x97,0x2d,0xec,0xef,0xcc,0x73,0x54,0xdf}};
+extern "C" const GUID __declspec(selectany) IID__UserDetectedHandler_2 =
+    {0x2c7472d2,0x5378,0x37de,{0x8c,0x29,0xfa,0xee,0x35,0x81,0x02,0xb7}};
+extern "C" const GUID __declspec(selectany) IID__DeviceDetectedHandler_2 =
+    {0x41f0015b,0x9c3b,0x364a,{0x8f,0x46,0x35,0x74,0x11,0xc1,0x2f,0x93}};
+extern "C" const GUID __declspec(selectany) IID__BadgeDetectedHandler_2 =
+    {0x42d8fac4,0x07c0,0x3d24,{0xa6,0xfc,0x72,0xa4,0xb3,0x25,0xe9,0x43}};
+extern "C" const GUID __declspec(selectany) IID__DataCollectionCompleteHandler =
+    {0x858d22d7,0x2c18,0x32db,{0xb5,0xc2,0x5f,0x31,0xba,0x14,0xd3,0xb7}};
+extern "C" const GUID __declspec(selectany) IID__Types =
+    {0x0d56b81d,0xca56,0x3db1,{0x94,0xf4,0xc7,0x9f,0xb7,0x2b,0x03,0x95}};
+extern "C" const GUID __declspec(selectany) IID__Info =
+    {0x8da2671c,0x56be,0x3b32,{0x9a,0xce,0x28,0x0d,0xe5,0xfb,0x28,0xe2}};
+extern "C" const GUID __declspec(selectany) IID__CompleteDelegate =
+    {0x314a5040,0xcd18,0x3c1c,{0x9a,0x49,0x91,0x27,0xb0,0x01,0xd5,0x60}};
+
+#pragma pack(pop)

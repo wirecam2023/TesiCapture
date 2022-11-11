@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CSchemiAnatomiciRecordDlg">
+    <Position X="0.5" Y="1.75" Width="2.25" />
+    <NestedTypes>
+      <Enum Name="CSchemiAnatomiciRecordDlg::__unnamed_enum_0e4d_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SchemiAnatomiciRecordDlg.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="m_ctrlListGridSchemiAnatomici" Type="CListSortableCtrl" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="2.75" Y="14.043" />
+        <Point X="5.25" Y="14.899" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>HZycECeAYgEStQgu0DBAASBhGREkVgdiAwkCApkUCfQ=</HashCode>
+      <FileName>SchemiAnatomiciRecordDlg.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_ctrlListGridSchemiAnatomici" />
+      <Field Name="m_pEsamiView" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CSchemiAnatomiciEtichetteSet">
+    <Position X="4.25" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AUAAAIAAAAQAAKBAUAAAEgACgAQIAQAAAEIAACABBAA=</HashCode>
+      <FileName>SchemiAnatomiciEtichetteSet.h</FileName>
+      <NewMemberFileName>SchemiAnatomiciSet.h</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSchemiAnatomiciAggiunto">
+    <Position X="15.5" Y="3.75" Width="2.75" />
+    <AssociationLine Name="m_lstEtichetteAggiunto" Type="CList&lt;TYPE, ARG_TYPE&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.5" Y="5.547" />
+        <Point X="14" Y="5.547" />
+        <Point X="14" Y="4.75" />
+        <Point X="13.281" Y="4.75" />
+        <Point X="13.281" Y="5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.529" Y="0.422" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="m_lstEtichetteAggiunto_" Type="CSchemiAnatomiciEtichetteAggiunto">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.805" Y="0.235" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ARQAgAgAAAQAQAAAAAAAAAABAIAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>SchemiAnatomici.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_lstEtichetteAggiunto" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="m_lstEtichetteAggiunto_" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CSchemiAnatomiciEtichette" Collapsed="true">
+    <Position X="8.25" Y="8.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAIAAAAAAAIAQAAAAAAAAgAAAAAAAAEYAAAABAAA=</HashCode>
+      <FileName>SchemiAnatomiciEtichette.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSchemiAnatomiciEtichetteAggiunto" Collapsed="true">
+    <Position X="15.5" Y="8.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAEAAAQAAAgAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>SchemiAnatomiciEtichette.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CEsamiView" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>9/u/+/Xe/+Xv/17Hv///X9/5//J//t/W/N+f/+/fe+0=</HashCode>
+      <FileName>EsamiView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CEndoxResizableDlg" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAgAAIARAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EndoxResizableDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBaseSet" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IEiBABQACEBGBATAFEAIV4ACBAAAAUACIACIANBABEA=</HashCode>
+      <FileName>BaseSet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CListSortableCtrl">
+    <Position X="5.25" Y="12" Width="2.5" />
+    <NestedTypes>
+      <Enum Name="CListSortableCtrl::ColumnType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ListSortableCtrl.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="CListSortableCtrl::SortType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ListSortableCtrl.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="CListSortableCtrl::tagITEMCALLBACK" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ListSortableCtrl.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="CListSortableCtrl::tagHEADERITEMDATA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ListSortableCtrl.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAABAAgAAGIAIAAEAQKIBAACAAAAABAAAAQIAACEAwA=</HashCode>
+      <FileName>ListSortableCtrl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CList&lt;TYPE, ARG_TYPE&gt;" Collapsed="true">
+    <Position X="11.75" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IARIABoIAAAAAACACCRQgAAABCIoQAIgKAgAFIAgAEQ=</HashCode>
+      <FileName>c:\program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\afxtempl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CListCtrlLocalize">
+    <Position X="5.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>DLL_Imaging\h\AmLocalize.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSchemiAnatomici">
+    <Position X="8.25" Y="3.75" Width="2.25" />
+    <AssociationLine Name="m_lstEtichette" Type="CList&lt;TYPE, ARG_TYPE&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="6.267" />
+        <Point X="11.5" Y="6.267" />
+        <Point X="11.5" Y="4.625" />
+        <Point X="12.5" Y="4.625" />
+        <Point X="12.5" Y="5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.03" Y="0.375" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="m_lstEtichette_" Type="CSchemiAnatomiciEtichette">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.122" Y="-1.15" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAABAAAQAQAIAAiAAAAAAIABIAAAQAAABYAABABAEA=</HashCode>
+      <FileName>SchemiAnatomici.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_lstEtichette" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="m_lstEtichette_" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CWnd" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>v977//bff7//b//96f/P/f/97/+e33f39uv7/d///7c=</HashCode>
+      <FileName>c:\program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\afxwin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
